@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class AutenticacaoService implements UserDetailsService {
     @Autowired
-    private UsuarioRespository respository;
+    private UsuarioRepository respository;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
